@@ -8,19 +8,24 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ferna\\.nuget\\packages\\": {}
+    "C:\\Users\\Elijah\\.nuget\\packages\\": {},
+    "D:\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ferna\\Cpp\\prograC#\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj",
+      "projectUniqueName": "C:\\Users\\Elijah\\Documents\\Licenciatura\\3° Semestre\\Programación II\\3° Unidad\\Proyecto\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj",
       "projectName": "ProyectoFinal_PapasDonuteria",
-      "projectPath": "C:\\Users\\ferna\\Cpp\\prograC#\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj",
-      "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ferna\\Cpp\\prograC#\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\obj\\",
+      "projectPath": "C:\\Users\\Elijah\\Documents\\Licenciatura\\3° Semestre\\Programación II\\3° Unidad\\Proyecto\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj",
+      "packagesPath": "C:\\Users\\Elijah\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Elijah\\Documents\\Licenciatura\\3° Semestre\\Programación II\\3° Unidad\\Proyecto\\ProyectoFinal_PapasDonuteria\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Elijah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -44,8 +49,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      }
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -69,7 +75,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
