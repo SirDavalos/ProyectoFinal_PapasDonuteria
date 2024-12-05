@@ -1,9 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Elijah\\Downloads\\ProyectoFinal_PapasDonuteria-main\\ProyectoFinal_PapasDonuteria-main\\",
+  "WorkspaceRootPath": "C:\\Users\\Elijah\\Documents\\Licenciatura\\3\u00B0 Semestre\\Programaci\u00F3n II\\3\u00B0 Unidad\\Proyecto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|c:\\users\\elijah\\downloads\\proyectofinal_papasdonuteria-main\\proyectofinal_papasdonuteria-main\\proyectofinal_papasdonuteria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|c:\\users\\elijah\\documents\\licenciatura\\3\u00B0 semestre\\programaci\u00F3n ii\\3\u00B0 unidad\\proyecto\\proyectofinal_papasdonuteria\\adminbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\adminbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|c:\\users\\elijah\\documents\\licenciatura\\3\u00B0 semestre\\programaci\u00F3n ii\\3\u00B0 unidad\\proyecto\\proyectofinal_papasdonuteria\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|c:\\users\\elijah\\documents\\licenciatura\\3\u00B0 semestre\\programaci\u00F3n ii\\3\u00B0 unidad\\proyecto\\proyectofinal_papasdonuteria\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|c:\\users\\elijah\\documents\\licenciatura\\3\u00B0 semestre\\programaci\u00F3n ii\\3\u00B0 unidad\\proyecto\\proyectofinal_papasdonuteria\\dona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\dona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|c:\\users\\elijah\\documents\\licenciatura\\3\u00B0 semestre\\programaci\u00F3n ii\\3\u00B0 unidad\\proyecto\\proyectofinal_papasdonuteria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -23,13 +39,65 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AdminBD.cs",
+              "DocumentMoniker": "C:\\Users\\Elijah\\Documents\\Licenciatura\\3\u00B0 Semestre\\Programaci\u00F3n II\\3\u00B0 Unidad\\Proyecto\\ProyectoFinal_PapasDonuteria\\AdminBD.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\AdminBD.cs",
+              "ToolTip": "C:\\Users\\Elijah\\Documents\\Licenciatura\\3\u00B0 Semestre\\Programaci\u00F3n II\\3\u00B0 Unidad\\Proyecto\\ProyectoFinal_PapasDonuteria\\AdminBD.cs",
+              "RelativeToolTip": "ProyectoFinal_PapasDonuteria\\AdminBD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T20:11:04.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Elijah\\Documents\\Licenciatura\\3\u00B0 Semestre\\Programaci\u00F3n II\\3\u00B0 Unidad\\Proyecto\\ProyectoFinal_PapasDonuteria\\Usuario.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Elijah\\Documents\\Licenciatura\\3\u00B0 Semestre\\Programaci\u00F3n II\\3\u00B0 Unidad\\Proyecto\\ProyectoFinal_PapasDonuteria\\Usuario.cs",
+              "RelativeToolTip": "ProyectoFinal_PapasDonuteria\\Usuario.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T21:09:43.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Productos.cs",
+              "DocumentMoniker": "C:\\Users\\Elijah\\Documents\\Licenciatura\\3\u00B0 Semestre\\Programaci\u00F3n II\\3\u00B0 Unidad\\Proyecto\\ProyectoFinal_PapasDonuteria\\Productos.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\Productos.cs",
+              "ToolTip": "C:\\Users\\Elijah\\Documents\\Licenciatura\\3\u00B0 Semestre\\Programaci\u00F3n II\\3\u00B0 Unidad\\Proyecto\\ProyectoFinal_PapasDonuteria\\Productos.cs",
+              "RelativeToolTip": "ProyectoFinal_PapasDonuteria\\Productos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T20:25:37.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dona.cs",
+              "DocumentMoniker": "C:\\Users\\Elijah\\Documents\\Licenciatura\\3\u00B0 Semestre\\Programaci\u00F3n II\\3\u00B0 Unidad\\Proyecto\\ProyectoFinal_PapasDonuteria\\Dona.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\Dona.cs",
+              "ToolTip": "C:\\Users\\Elijah\\Documents\\Licenciatura\\3\u00B0 Semestre\\Programaci\u00F3n II\\3\u00B0 Unidad\\Proyecto\\ProyectoFinal_PapasDonuteria\\Dona.cs",
+              "RelativeToolTip": "ProyectoFinal_PapasDonuteria\\Dona.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T20:07:48.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Elijah\\Downloads\\ProyectoFinal_PapasDonuteria-main\\ProyectoFinal_PapasDonuteria-main\\ProyectoFinal_PapasDonuteria\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Elijah\\Documents\\Licenciatura\\3\u00B0 Semestre\\Programaci\u00F3n II\\3\u00B0 Unidad\\Proyecto\\ProyectoFinal_PapasDonuteria\\Form1.cs",
               "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\Form1.cs",
-              "ToolTip": "C:\\Users\\Elijah\\Downloads\\ProyectoFinal_PapasDonuteria-main\\ProyectoFinal_PapasDonuteria-main\\ProyectoFinal_PapasDonuteria\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Elijah\\Documents\\Licenciatura\\3\u00B0 Semestre\\Programaci\u00F3n II\\3\u00B0 Unidad\\Proyecto\\ProyectoFinal_PapasDonuteria\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyectoFinal_PapasDonuteria\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T00:30:32.393Z",
+              "WhenOpened": "2024-12-05T20:26:13.18Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
