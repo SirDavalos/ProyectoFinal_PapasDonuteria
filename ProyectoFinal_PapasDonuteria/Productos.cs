@@ -14,6 +14,7 @@ namespace ProyectoFinal_PapasDonuteria
         private string imagen;
         private double precio;
         private int existencia;
+        private string descripcion;
 
         public Productos() { }
         public Productos(int id, int tipo, string nombre, string imagen, double precio, int existencia)
@@ -24,6 +25,7 @@ namespace ProyectoFinal_PapasDonuteria
             this.imagen = imagen;
             this.precio = precio;
             this.existencia = existencia;
+            this.descripcion = "necesito un campo descrípcion en la BD";
         }
 
         public int Id { get => id; set => id = value; }
@@ -32,5 +34,6 @@ namespace ProyectoFinal_PapasDonuteria
         public string Imagen { get => imagen; set => imagen = value; }
         public double Precio { get => precio; set => precio = value; }
         public int Existencia { get => existencia; set => existencia = value; }
+        public string Descripcion { get => descripcion; set => descripcion = value; }
     }
 }

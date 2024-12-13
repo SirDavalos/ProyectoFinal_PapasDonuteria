@@ -28,13 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            buttonMenu = new Button();
             SuspendLayout();
+            // 
+            // buttonMenu
+            // 
+            buttonMenu.Location = new Point(455, 464);
+            buttonMenu.Name = "buttonMenu";
+            buttonMenu.Size = new Size(133, 32);
+            buttonMenu.TabIndex = 0;
+            buttonMenu.Text = "Ir a Menu";
+            buttonMenu.UseVisualStyleBackColor = true;
+            buttonMenu.Click += buttonMenu_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1264, 681);
+            ClientSize = new Size(1009, 508);
+            Controls.Add(buttonMenu);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
@@ -42,5 +54,7 @@
         }
 
         #endregion
+
+        private Button buttonMenu;
     }
 }

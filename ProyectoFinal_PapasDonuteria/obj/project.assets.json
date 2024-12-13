@@ -1609,23 +1609,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Elijah\\.nuget\\packages\\": {},
-    "D:\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Elijah\\Documents\\Licenciatura\\3° Semestre\\Programación II\\3° Unidad\\Proyecto\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj",
       "projectName": "ProyectoFinal_PapasDonuteria",
-      "projectPath": "C:\\Users\\Elijah\\Documents\\Licenciatura\\3° Semestre\\Programación II\\3° Unidad\\Proyecto\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj",
-      "packagesPath": "C:\\Users\\Elijah\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Elijah\\Documents\\Licenciatura\\3° Semestre\\Programación II\\3° Unidad\\Proyecto\\ProyectoFinal_PapasDonuteria\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Elijah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
