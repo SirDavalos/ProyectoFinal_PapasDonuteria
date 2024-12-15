@@ -17,7 +17,7 @@ namespace ProyectoFinal_PapasDonuteria
         private string descripcion;
 
         public Productos() { }
-        public Productos(int id, int tipo, string nombre, string imagen, double precio, int existencia)
+        public Productos(int id, int tipo, string nombre, string imagen, string descripcion, double precio, int existencia)
         {
             this.id = id;
             this.tipo = tipo;
@@ -25,7 +25,7 @@ namespace ProyectoFinal_PapasDonuteria
             this.imagen = imagen;
             this.precio = precio;
             this.existencia = existencia;
-            this.descripcion = "necesito un campo descrípcion en la BD";
+            this.descripcion = descripcion;
         }
 
         public int Id { get => id; set => id = value; }

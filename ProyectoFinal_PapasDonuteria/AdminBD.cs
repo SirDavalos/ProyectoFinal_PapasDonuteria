@@ -46,6 +46,7 @@ namespace ProyectoFinal_PapasDonuteria
             int tipo;
             string nombre;
             string imagen;
+            string descripcion;
             double precio;
             int existencia;
 
@@ -61,10 +62,11 @@ namespace ProyectoFinal_PapasDonuteria
                     tipo = Convert.ToInt32(reader["tipo"]);
                     nombre = Convert.ToString(reader["nombre"]) ?? "";
                     imagen = Convert.ToString(reader["imagen"]) ?? "";
+                    descripcion = Convert.ToString(reader["descripcion"]) ?? "";
                     precio = Convert.ToDouble(reader["precio"]);
                     existencia = Convert.ToInt32(reader["existencia"]);
 
-                    item = new Productos(id, tipo, nombre, imagen, precio, existencia);
+                    item = new Productos(id, tipo, nombre, imagen, descripcion, precio, existencia);
                     data.Add(item);
 
                 }
@@ -82,7 +84,7 @@ namespace ProyectoFinal_PapasDonuteria
             return data;
         }
 
-        public void insertar(int idp, int tipo, string prod, string img, double price, int exist)
+        public void insertar(int idp, int tipo, string prod, string img, string descr, double price, int exist)
         {
             string query = "";
             try
@@ -92,6 +94,7 @@ namespace ProyectoFinal_PapasDonuteria
                + "'" + tipo + "',"
                + "'" + prod + "',"
                + "'" + img + "', "
+               + "'" + descr + "',"
                + "'" + price + "',"
                + "'" + exist + "')";
 
@@ -117,6 +120,7 @@ namespace ProyectoFinal_PapasDonuteria
             int tipo;
             string nombre;
             string imagen;
+            string descripcion;
             double precio;
             int existencia;
             try
@@ -131,10 +135,11 @@ namespace ProyectoFinal_PapasDonuteria
                     tipo = Convert.ToInt32(reader["tipo"]);
                     nombre = Convert.ToString(reader["nombre"]) ?? "";
                     imagen = Convert.ToString(reader["imagen"]) ?? "";
+                    descripcion = Convert.ToString(reader["descripcion"]) ?? "";
                     precio = Convert.ToDouble(reader["precio"]);
                     existencia = Convert.ToInt32(reader["existencia"]);
 
-                    item = new Productos(id, tipo, nombre, imagen, precio, existencia);
+                    item = new Productos(id, tipo, nombre, imagen, descripcion, precio, existencia);
                 }
                 reader.Close();
             }
@@ -166,11 +171,11 @@ namespace ProyectoFinal_PapasDonuteria
         }
 
 
-        public void actualizar(int idp, int tipo, string prod, string img, double price, int exist)
+        public void actualizar(int idp, int tipo, string prod, string img, string descr, double price, int exist)
         {
             try
             {
-                string query = "UPDATE producto SET id=" + "'" + idp + "'" + ",tipo=" + "'" + tipo + "'" + ",nombre=" + "'" + prod + "'" + ",imagen=" + "'" + img + "'" + ",precio=" + "'" + price + "'" + ",existencia=" + "'" + exist + "'" + "where id=" + idp + ";";
+                string query = "UPDATE producto SET id=" + "'" + idp + "'" + ",tipo=" + "'" + tipo + "'" + ",nombre=" + "'" + prod + "'" + ",imagen=" + "'" + img + "'" + ",descripcion=" + "'" + descr + "'" + ",precio=" + "'" + price + "'" + ",existencia=" + "'" + exist + "'" + "where id=" + idp + ";";
                 MessageBox.Show(query);
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.ExecuteNonQuery();
@@ -183,19 +188,20 @@ namespace ProyectoFinal_PapasDonuteria
             }
         }
 
-        public bool inicioSesion(string nomu, string passu)
+        public bool inicioSesion(string user, string passu)
         {
             bool flagAcceso = false;
             bool flagEncontrado = false;
             int id;
             string nombre;
+            string cuenta;
             string password;
             double monto;
             bool admin;
 
             try
             {
-                string query = "SELECT * FROM usuarios where nombre=" + nomu + ";";
+                string query = "SELECT * FROM usuarios where cuenta=" + user + ";";
                 MySqlCommand command = new MySqlCommand(query, this.connection);
 
                 MySqlDataReader reader = command.ExecuteReader();
@@ -204,6 +210,7 @@ namespace ProyectoFinal_PapasDonuteria
                     flagEncontrado = true;
                     id = Convert.ToInt32(reader["id"]);
                     nombre = Convert.ToString(reader["nombre"]) ?? "";
+                    cuenta = Convert.ToString(reader["cuenta"]) ?? "";
                     password = Convert.ToString(reader["contraseña"]) ?? "";
                     monto = Convert.ToDouble(reader["monto"]);
                     admin = Convert.ToBoolean(reader["admin"]);
@@ -235,18 +242,19 @@ namespace ProyectoFinal_PapasDonuteria
            porque ocupo encontrar una forma de pasar el flag de acceso y/o encontrar una manera que no acceda incluso con los datos incorrectos
            para poder pasar simplemente la id, o talves también pudera acceder con el nombre pero ahí chéquenle
          */
-        public Usuario datosUser(int idu)
+        public Usuario datosUser(string acc)
         {
             Usuario user = null;
             int id;
             string nombre;
+            string cuenta;
             string password;
             double monto;
             bool admin;
 
             try
             {
-                string query = "SELECT * FROM usuarios where id=" + idu + ";";
+                string query = "SELECT * FROM usuarios where cuenta=" + acc + ";";
                 MySqlCommand command = new MySqlCommand(query, this.connection);
 
                 MySqlDataReader reader = command.ExecuteReader();
@@ -254,9 +262,11 @@ namespace ProyectoFinal_PapasDonuteria
                 {
                     id = Convert.ToInt32(reader["id"]);
                     nombre = Convert.ToString(reader["nombre"]) ?? "";
+                    cuenta = Convert.ToString(reader["cuenta"]) ?? "";
                     password = Convert.ToString(reader["contraseña"]) ?? "";
                     monto = Convert.ToDouble(reader["monto"]);
                     admin = Convert.ToBoolean(reader["admin"]);
+                    user = new Usuario(id, nombre, cuenta, password, monto, admin);
                 }
                 reader.Close();
             }
@@ -266,6 +276,25 @@ namespace ProyectoFinal_PapasDonuteria
                 this.Disconnect();
             }
             return user;
+        }
+
+        public void actualizarMonto(string acc, double monto)
+        {
+            Usuario user = datosUser(acc);
+            double montoT = monto + user.Monto;
+            try
+            {
+                string query = "UPDATE usuarios SET id=" + "'" + user.Id + "'" + ",nombre=" + "'" + user.Nombre + "'" + ",cuenta=" + "'" + user.Cuenta + "'" + ",contraseña=" + "'" + user.Password + "'" + ",monto=" + "'" + montoT + "'" + ",admin=" + "'" + user.Admin + "'" + "where id=" + user.Id + ";";
+                MessageBox.Show(query);
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show(query + "\nRegistro Actualizado");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en la actualizacion: " + ex.Message);
+                this.Disconnect();
+            }
         }
     }
 }

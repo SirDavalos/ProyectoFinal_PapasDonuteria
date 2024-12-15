@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoFinal_PapasDonuteria")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec841820597d1f7b97e4b1e3a3df78b3306d5dc9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+722cf1df532e8c2668bea0aad1024449e6ad77f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoFinal_PapasDonuteria")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoFinal_PapasDonuteria")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -28,7 +28,7 @@ namespace ProyectoFinal_PapasDonuteria
             InitializeComponent();
             this.usuario = usuario;
             this.labelUsuario.Text = usuario;
-            this.labelUsuario.Left = this.Width - this.labelUsuario.Width - 35;
+            this.labelUsuario.Left = this.Width - this.labelUsuario.Width - 145;
             elementos = new List<Productos>();
             formas = new List<Productos>();
             masas = new List<Productos>();
@@ -44,6 +44,17 @@ namespace ProyectoFinal_PapasDonuteria
             pictureBoxForma.Image = System.Drawing.Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Imagenes", formas[indiceF].Imagen));
             pictureBoxMasa.Image = System.Drawing.Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Imagenes", masas[indiceM].Imagen));
             pictureBoxGlas.Image = System.Drawing.Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Imagenes", glaseados[indiceG].Imagen));
+
+            richTextBoxForma.Text = formas[indiceF].Descripcion;
+            richTextBoxMasa.Text = masas[indiceM].Descripcion;
+            richTextBoxGlas.Text = glaseados[indiceG].Descripcion;
+
+            richTextBoxExiF.Text = Convert.ToString(formas[indiceF].Existencia);
+            richTextBoxExiM.Text = Convert.ToString(masas[indiceM].Existencia);
+            richTextBoxExiG.Text = Convert.ToString(glaseados[indiceG].Existencia);
+
+            timerFechaHora.Tick += timerFechaHora_Tick;
+            timerFechaHora.Start();
         }
 
         public void listaElementos()
@@ -82,6 +93,7 @@ namespace ProyectoFinal_PapasDonuteria
             }
 
             this.richTextBoxForma.Text = formas[indiceF].Descripcion;
+            richTextBoxExiF.Text = Convert.ToString(formas[indiceF].Existencia);
         }
 
         private void buttonFormaR_Click(object sender, EventArgs e)
@@ -101,6 +113,7 @@ namespace ProyectoFinal_PapasDonuteria
             }
 
             this.richTextBoxForma.Text = formas[indiceF].Descripcion;
+            richTextBoxExiF.Text = Convert.ToString(formas[indiceF].Existencia);
         }
 
         private void buttonMasaL_Click(object sender, EventArgs e)
@@ -120,6 +133,7 @@ namespace ProyectoFinal_PapasDonuteria
             }
 
             this.richTextBoxMasa.Text = masas[indiceM].Descripcion;
+            richTextBoxExiM.Text = Convert.ToString(masas[indiceM].Existencia);
         }
 
         private void buttonMasaR_Click(object sender, EventArgs e)
@@ -139,6 +153,7 @@ namespace ProyectoFinal_PapasDonuteria
             }
 
             this.richTextBoxMasa.Text = masas[indiceM].Descripcion;
+            richTextBoxExiM.Text = Convert.ToString(masas[indiceM].Existencia);
         }
 
         private void buttonGlasL_Click(object sender, EventArgs e)
@@ -158,6 +173,7 @@ namespace ProyectoFinal_PapasDonuteria
             }
 
             this.richTextBoxGlas.Text = glaseados[indiceG].Descripcion;
+            richTextBoxExiG.Text = Convert.ToString(glaseados[indiceG].Existencia);
         }
 
         private void buttonGlasR_Click(object sender, EventArgs e)
@@ -177,19 +193,27 @@ namespace ProyectoFinal_PapasDonuteria
             }
 
             this.richTextBoxGlas.Text = glaseados[indiceG].Descripcion;
+            richTextBoxExiG.Text = Convert.ToString(glaseados[indiceG].Existencia);
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             double precio;
             int cantidad = Convert.ToInt32(this.numUDCantidad.Value);
-            precio = formas[indiceF].Precio + masas[indiceM].Precio + glaseados[indiceG].Precio;
-            formas[indiceF].Existencia = formas[indiceF].Existencia - cantidad;
-            masas[indiceM].Existencia = masas[indiceM].Existencia - cantidad;
-            glaseados[indiceG].Existencia = glaseados[indiceG].Existencia - cantidad;
-            pedido.Add(new Dona(formas[indiceF].Nombre, masas[indiceM].Nombre, glaseados[indiceG].Nombre, precio, cantidad));
-            MessageBox.Show("Dona/s añadida/s al pedido");
-            reiniciarImagenes();
+            if (cantidad > formas[indiceF].Existencia || cantidad > masas[indiceM].Existencia || cantidad > glaseados[indiceG].Existencia)
+            {
+                MessageBox.Show("Cantidad de existencia insuficiente para generar el pedido");
+            }
+            else
+            {
+                precio = ((formas[indiceF].Precio * masas[indiceM].Precio) + glaseados[indiceG].Precio)*cantidad;
+                formas[indiceF].Existencia = formas[indiceF].Existencia - cantidad;
+                masas[indiceM].Existencia = masas[indiceM].Existencia - cantidad;
+                glaseados[indiceG].Existencia = glaseados[indiceG].Existencia - cantidad;
+                pedido.Add(new Dona(formas[indiceF].Nombre, masas[indiceM].Nombre, glaseados[indiceG].Nombre, precio, cantidad));
+                MessageBox.Show("Dona/s añadida/s al pedido");
+                reiniciarImagenes();
+            }
         }
 
         private void buttonVPedido_Click(object sender, EventArgs e)
@@ -229,18 +253,55 @@ namespace ProyectoFinal_PapasDonuteria
             {
                 this.pictureBoxGlas.Image = System.Drawing.Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Imagenes", "Agotado.png"));
             }
+
+            richTextBoxExiF.Text = Convert.ToString(formas[indiceF].Existencia);
+            richTextBoxExiM.Text = Convert.ToString(masas[indiceM].Existencia);
+            richTextBoxExiG.Text = Convert.ToString(glaseados[indiceG].Existencia);
         }
 
         private void buttonComprar_Click(object sender, EventArgs e)
         {
             fechaSeleccionada = dateTimePickerEntrega.Value;
-            for (int i=0; i<formas.Count-1; i++)
-                conexion.actualizar(formas[i].Id, formas[i].Tipo, formas[i].Nombre, formas[i].Imagen, formas[i].Precio, formas[i].Existencia);
+            double precioTotal = 0;
+            for(int i=0; i < pedido.Count; i++)
+            {
+                precioTotal += pedido[i].Precio;
+            }
+            for (int i = 0; i < formas.Count - 1; i++)
+                conexion.actualizar(formas[i].Id, formas[i].Tipo, formas[i].Nombre, formas[i].Imagen, formas[i].Descripcion, formas[i].Precio, formas[i].Existencia);
             for (int i = 0; i < masas.Count - 1; i++)
-                conexion.actualizar(masas[i].Id, masas[i].Tipo, masas[i].Nombre, masas[i].Imagen, masas[i].Precio, masas[i].Existencia);
+                conexion.actualizar(masas[i].Id, masas[i].Tipo, masas[i].Nombre, masas[i].Imagen, masas[i].Descripcion, masas[i].Precio, masas[i].Existencia);
             for (int i = 0; i < glaseados.Count - 1; i++)
-                conexion.actualizar(glaseados[i].Id, glaseados[i].Tipo, glaseados[i].Nombre, glaseados[i].Imagen, glaseados[i].Precio, glaseados[i].Existencia);
+                conexion.actualizar(glaseados[i].Id, glaseados[i].Tipo, glaseados[i].Nombre, glaseados[i].Imagen, glaseados[i].Descripcion, glaseados[i].Precio, glaseados[i].Existencia);
+            conexion.actualizarMonto(usuario, precioTotal);
+        }
 
+        private void timerFechaHora_Tick(object sender, EventArgs e)
+        {
+            labelFechaHora.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+        }
+
+        private void buttonBorrar_Click(object sender, EventArgs e)
+        {
+            pedido.Clear();
+            elementos.Clear();
+            formas.Clear();
+            masas.Clear();
+            glaseados.Clear();
+            elementos = conexion.consulta();
+            this.listaElementos();
+            this.reiniciarImagenes();
+            MessageBox.Show("Pedido borrado con exito");
+        }
+
+        private void buttonLogOut_Click(object sender, EventArgs e)
+        {
+            Logout salir = new Logout();
+            salir.ShowDialog();
+            if (Logout.flag)
+            {
+                this.Close();
+            }
         }
     }
 }
