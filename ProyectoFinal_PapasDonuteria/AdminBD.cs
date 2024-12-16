@@ -89,7 +89,7 @@ namespace ProyectoFinal_PapasDonuteria
             string query = "";
             try
             {
-                query = "INSERT INTO preductos (id,tipo,nombre,imagen,precio,existencia) VALUES ("
+                query = "INSERT INTO productos (id,tipo,nombre,imagen,descripcion,precio,existencia) VALUES ("
                + "'" + idp + "',"
                + "'" + tipo + "',"
                + "'" + prod + "',"
@@ -175,11 +175,11 @@ namespace ProyectoFinal_PapasDonuteria
         {
             try
             {
-                string query = "UPDATE producto SET id=" + "'" + idp + "'" + ",tipo=" + "'" + tipo + "'" + ",nombre=" + "'" + prod + "'" + ",imagen=" + "'" + img + "'" + ",descripcion=" + "'" + descr + "'" + ",precio=" + "'" + price + "'" + ",existencia=" + "'" + exist + "'" + "where id=" + idp + ";";
-                MessageBox.Show(query);
+                string query = "UPDATE productos SET id=" + "'" + idp + "'" + ",tipo=" + "'" + tipo + "'" + ",nombre=" + "'" + prod + "'" + ",imagen=" + "'" + img + "'" + ",descripcion=" + "'" + descr + "'" + ",precio=" + "'" + price + "'" + ",existencia=" + "'" + exist + "'" + "where id=" + idp + ";";
+                //MessageBox.Show(query);
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show(query + "\nRegistro Actualizado");
+                //MessageBox.Show(query + "\nRegistro Actualizado");
             }
             catch (Exception ex)
             {
@@ -242,7 +242,7 @@ namespace ProyectoFinal_PapasDonuteria
            porque ocupo encontrar una forma de pasar el flag de acceso y/o encontrar una manera que no acceda incluso con los datos incorrectos
            para poder pasar simplemente la id, o talves también pudera acceder con el nombre pero ahí chéquenle
          */
-        public Usuario datosUser(string acc)
+        public Usuario datosUser(int idp)
         {
             Usuario user = null;
             int id;
@@ -254,7 +254,7 @@ namespace ProyectoFinal_PapasDonuteria
 
             try
             {
-                string query = "SELECT * FROM usuarios where cuenta=" + acc + ";";
+                string query = "SELECT * FROM usuarios where id=" + idp + ";";
                 MySqlCommand command = new MySqlCommand(query, this.connection);
 
                 MySqlDataReader reader = command.ExecuteReader();
@@ -280,21 +280,61 @@ namespace ProyectoFinal_PapasDonuteria
 
         public void actualizarMonto(string acc, double monto)
         {
-            Usuario user = datosUser(acc);
+            Usuario user = buscarUsuario(acc);
             double montoT = monto + user.Monto;
             try
             {
                 string query = "UPDATE usuarios SET id=" + "'" + user.Id + "'" + ",nombre=" + "'" + user.Nombre + "'" + ",cuenta=" + "'" + user.Cuenta + "'" + ",contraseña=" + "'" + user.Password + "'" + ",monto=" + "'" + montoT + "'" + ",admin=" + "'" + user.Admin + "'" + "where id=" + user.Id + ";";
-                MessageBox.Show(query);
+                //MessageBox.Show(query);
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show(query + "\nRegistro Actualizado");
+               // MessageBox.Show(query + "\nRegistro Actualizado");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error en la actualizacion: " + ex.Message);
                 this.Disconnect();
             }
+        }
+
+        public Usuario buscarUsuario(string acc)
+        {
+            Usuario user = null;
+            int id;
+            string nombre;
+            string cuenta;
+            string password;
+            double monto;
+            bool admin;
+
+            try
+            {
+                string query = "SELECT * FROM usuarios";
+                MySqlCommand command = new MySqlCommand(query, this.connection);
+
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    id = Convert.ToInt32(reader["id"]);
+                    nombre = Convert.ToString(reader["nombre"]) ?? "";
+                    cuenta = Convert.ToString(reader["cuenta"]) ?? "";
+                    password = Convert.ToString(reader["contraseña"]) ?? "";
+                    monto = Convert.ToDouble(reader["monto"]);
+                    admin = Convert.ToBoolean(reader["admin"]);
+                    if(acc == cuenta)
+                    {
+                        user = new Usuario(id, nombre, cuenta, password, monto, admin);
+                        break;
+                    }
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al leer la tabla de la base de datos: " + ex.Message);
+                this.Disconnect();
+            }
+            return user;
         }
     }
 }

@@ -273,7 +273,7 @@ namespace ProyectoFinal_PapasDonuteria
                 conexion.actualizar(masas[i].Id, masas[i].Tipo, masas[i].Nombre, masas[i].Imagen, masas[i].Descripcion, masas[i].Precio, masas[i].Existencia);
             for (int i = 0; i < glaseados.Count - 1; i++)
                 conexion.actualizar(glaseados[i].Id, glaseados[i].Tipo, glaseados[i].Nombre, glaseados[i].Imagen, glaseados[i].Descripcion, glaseados[i].Precio, glaseados[i].Existencia);
-            conexion.actualizarMonto(usuario, precioTotal);
+            conexion.actualizarMonto(this.usuario, precioTotal);
         }
 
         private void timerFechaHora_Tick(object sender, EventArgs e)

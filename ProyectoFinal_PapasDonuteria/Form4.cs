@@ -42,7 +42,19 @@ namespace ProyectoFinal_PapasDonuteria
 
         private void lblSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Altas formaltas = new Altas(usuario);
+            this.Hide();
+            formaltas.ShowDialog();
+            this.Show();
+            if (Logout.flag)
+            {
+                this.Close();
+            }
         }
     }
 }

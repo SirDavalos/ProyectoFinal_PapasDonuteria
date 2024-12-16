@@ -22,10 +22,20 @@ namespace ProyectoFinal_PapasDonuteria
         {
             //NECESITO QUE COMPRUEBEN EL USUARIO Y LO MANDEN AQUI
             string usuario = textBoxUsuario.Text;
-            Form3 form3 = new Form3(usuario);
-            this.Hide();
-            form3.ShowDialog();
-            this.Show();
+            if(usuario != "admin")
+            {
+                Form3 form3 = new Form3(usuario);
+                this.Hide();
+                form3.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                FormAdmin formAdmin = new FormAdmin(usuario);
+                this.Hide();
+                formAdmin.ShowDialog();
+                this.Show();
+            }
         }
     }
 }

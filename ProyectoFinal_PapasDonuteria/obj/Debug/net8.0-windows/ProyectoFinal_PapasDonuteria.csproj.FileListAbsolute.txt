@@ -49,3 +49,4 @@ C:\Users\Usuario\ProyectoFinal_PapasDonuteria\ProyectoFinal_PapasDonuteria\bin\D
 C:\Users\Usuario\ProyectoFinal_PapasDonuteria\ProyectoFinal_PapasDonuteria\bin\Debug\net8.0-windows\Imagenes\Vanilla_Icing.png
 C:\Users\Usuario\ProyectoFinal_PapasDonuteria\ProyectoFinal_PapasDonuteria\obj\Debug\net8.0-windows\ProyectoFinal_PapasDonuteria.FormAdmin.resources
 C:\Users\Usuario\ProyectoFinal_PapasDonuteria\ProyectoFinal_PapasDonuteria\obj\Debug\net8.0-windows\ProyectoFinal_PapasDonuteria.Logout.resources
+C:\Users\Usuario\ProyectoFinal_PapasDonuteria\ProyectoFinal_PapasDonuteria\obj\Debug\net8.0-windows\ProyectoFinal_PapasDonuteria.Altas.resources
