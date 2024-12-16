@@ -1,3 +1,4 @@
+using ProyectoFinal_PapasDonuteria;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -51,9 +52,9 @@ namespace PortadaApp
             iniciarButton.Anchor = AnchorStyles.Top;
             iniciarButton.Click += (sender, e) =>
             {
-                Form siguienteFormulario = new Form2(); 
+                Form2 form2 = new Form2();
                 this.Hide();
-                siguienteFormulario.ShowDialog();
+                form2.ShowDialog();
                 this.Show();
             };
             this.Controls.Add(iniciarButton);

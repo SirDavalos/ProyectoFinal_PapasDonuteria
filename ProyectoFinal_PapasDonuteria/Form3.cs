@@ -261,6 +261,7 @@ namespace ProyectoFinal_PapasDonuteria
 
         private void buttonComprar_Click(object sender, EventArgs e)
         {
+            Form5 form5 = new Form5();
             fechaSeleccionada = dateTimePickerEntrega.Value;
             double precioTotal = 0;
             for(int i=0; i < pedido.Count; i++)
@@ -274,6 +275,9 @@ namespace ProyectoFinal_PapasDonuteria
             for (int i = 0; i < glaseados.Count - 1; i++)
                 conexion.actualizar(glaseados[i].Id, glaseados[i].Tipo, glaseados[i].Nombre, glaseados[i].Imagen, glaseados[i].Descripcion, glaseados[i].Precio, glaseados[i].Existencia);
             conexion.actualizarMonto(this.usuario, precioTotal);
+            this.Hide();
+            form5.ShowDialog();
+            this.Show();
         }
 
         private void timerFechaHora_Tick(object sender, EventArgs e)
