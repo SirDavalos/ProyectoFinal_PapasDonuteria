@@ -37,5 +37,10 @@ namespace ProyectoFinal_PapasDonuteria
             form7.ShowDialog();
             this.Show();
         }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

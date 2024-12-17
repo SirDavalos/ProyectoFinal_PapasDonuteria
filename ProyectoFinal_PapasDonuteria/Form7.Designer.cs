@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
             buttonPagar = new Button();
             textBoxPin = new TextBox();
             label4 = new Label();
@@ -36,9 +39,6 @@
             textBoxMes = new TextBox();
             textBoxNumTarj = new TextBox();
             textBoxNom = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -59,7 +59,33 @@
             groupBox1.Size = new Size(430, 304);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(31, 115);
+            label3.Name = "label3";
+            label3.Size = new Size(153, 20);
+            label3.TabIndex = 8;
+            label3.Text = "Fecha de vencimiento";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(31, 82);
+            label2.Name = "label2";
+            label2.Size = new Size(131, 20);
+            label2.TabIndex = 7;
+            label2.Text = "Numero de tarjeta";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(31, 50);
+            label1.Name = "label1";
+            label1.Size = new Size(147, 20);
+            label1.TabIndex = 6;
+            label1.Text = "Nombre en la tarjeta";
             // 
             // buttonPagar
             // 
@@ -124,33 +150,6 @@
             textBoxNom.TabIndex = 1;
             textBoxNom.Text = "Nombre";
             textBoxNom.TextAlign = HorizontalAlignment.Center;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(31, 50);
-            label1.Name = "label1";
-            label1.Size = new Size(147, 20);
-            label1.TabIndex = 6;
-            label1.Text = "Nombre en la tarjeta";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(31, 82);
-            label2.Name = "label2";
-            label2.Size = new Size(131, 20);
-            label2.TabIndex = 7;
-            label2.Text = "Numero de tarjeta";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(31, 115);
-            label3.Name = "label3";
-            label3.Size = new Size(153, 20);
-            label3.TabIndex = 8;
-            label3.Text = "Fecha de vencimiento";
             // 
             // Form7
             // 

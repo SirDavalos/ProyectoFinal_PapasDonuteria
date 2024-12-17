@@ -19,7 +19,7 @@ namespace ProyectoFinal_PapasDonuteria
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            this.pictureBox1.Image = System.Drawing.Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Imagenes", "Codigoxxo.png"));
         }
     }
 }
