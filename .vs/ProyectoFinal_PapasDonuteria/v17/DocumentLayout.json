@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|c:\\users\\usuario\\proyectofinal_papasdonuteria\\proyectofinal_papasdonuteria\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|c:\\users\\usuario\\proyectofinal_papasdonuteria\\proyectofinal_papasdonuteria\\altas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\altas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\proyectofinal_papasdonuteria\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\proyectofinal_papasdonuteria\\altas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\altas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|c:\\users\\usuario\\proyectofinal_papasdonuteria\\proyectofinal_papasdonuteria\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|c:\\users\\usuario\\proyectofinal_papasdonuteria\\proyectofinal_papasdonuteria\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|c:\\users\\usuario\\proyectofinal_papasdonuteria\\proyectofinal_papasdonuteria\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|c:\\users\\usuario\\proyectofinal_papasdonuteria\\proyectofinal_papasdonuteria\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|c:\\users\\usuario\\proyectofinal_papasdonuteria\\proyectofinal_papasdonuteria\\adminbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,20 +35,12 @@
       "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\proyectofinal_papasdonuteria\\altas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\altas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|c:\\users\\usuario\\proyectofinal_papasdonuteria\\proyectofinal_papasdonuteria\\altas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\altas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\proyectofinal_papasdonuteria\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|c:\\users\\usuario\\proyectofinal_papasdonuteria\\proyectofinal_papasdonuteria\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\proyectofinal_papasdonuteria\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|solutionrelative:proyectofinal_papasdonuteria\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A64822E2-7421-4E3F-9E3D-A63F1600939C}|ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj|c:\\users\\usuario\\proyectofinal_papasdonuteria\\proyectofinal_papasdonuteria\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,18 +66,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "Form2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Form2.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\Form2.cs",
+              "ToolTip": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Form2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoFinal_PapasDonuteria\\Form2.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T05:20:39.316Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Altas.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Altas.cs",
               "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\Altas.cs",
               "ToolTip": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Altas.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyectoFinal_PapasDonuteria\\Altas.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T23:39:46.916Z"
+              "WhenOpened": "2024-12-15T23:39:46.916Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Altas.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Altas.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\Altas.cs",
+              "ToolTip": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Altas.cs",
+              "RelativeToolTip": "ProyectoFinal_PapasDonuteria\\Altas.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAuwBIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T23:41:49.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Form4.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Form4.cs",
               "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\Form4.cs",
@@ -85,31 +115,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Form3.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Form3.cs",
               "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\Form3.cs",
               "ToolTip": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Form3.cs",
               "RelativeToolTip": "ProyectoFinal_PapasDonuteria\\Form3.cs",
-              "ViewState": "AgIAAAEBAAAAAAAAAAAmwBMBAABAAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAmwNAAAABxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T00:24:09.553Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
+              "Title": "Form4.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Form4.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\Form4.cs",
+              "ToolTip": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Form4.cs",
+              "RelativeToolTip": "ProyectoFinal_PapasDonuteria\\Form4.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T03:12:19.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Form3.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Form3.cs",
               "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\Form3.cs",
               "ToolTip": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Form3.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyectoFinal_PapasDonuteria\\Form3.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T00:29:39.632Z"
+              "WhenOpened": "2024-12-13T00:29:39.632Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Usuario.cs",
               "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\Usuario.cs",
@@ -121,20 +165,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Form2.cs",
               "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\Form2.cs",
               "ToolTip": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Form2.cs",
               "RelativeToolTip": "ProyectoFinal_PapasDonuteria\\Form2.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAmwCQAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAA4wCQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T00:11:28.744Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "AdminBD.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\AdminBD.cs",
               "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\AdminBD.cs",
@@ -142,38 +186,11 @@
               "RelativeToolTip": "ProyectoFinal_PapasDonuteria\\AdminBD.cs",
               "ViewState": "AgIAACoBAAAAAAAAAAAmwDwBAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T20:11:04.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T20:11:04.266Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form4.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Form4.cs",
-              "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\Form4.cs",
-              "ToolTip": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Form4.cs",
-              "RelativeToolTip": "ProyectoFinal_PapasDonuteria\\Form4.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAmwCwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T03:12:19.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Altas.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Altas.cs",
-              "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\Altas.cs",
-              "ToolTip": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Altas.cs",
-              "RelativeToolTip": "ProyectoFinal_PapasDonuteria\\Altas.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAuwJAAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T23:41:49.179Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Productos.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Productos.cs",
               "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\Productos.cs",
@@ -185,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Dona.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\Dona.cs",
               "RelativeDocumentMoniker": "ProyectoFinal_PapasDonuteria\\Dona.cs",
