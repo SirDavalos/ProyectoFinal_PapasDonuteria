@@ -22,11 +22,11 @@ namespace ProyectoLogin
         private void buttonContinuar_Click(object sender, EventArgs e)
         {
           
-            string username = textBoxUsuario.Text;
-            string password = textBoxContraseña.Text;
+            string nombre = textBoxUsuario.Text;
+            string contraseña = textBoxContraseña.Text;
 
           
-            if (VerificarCredenciales(username, password))
+            if (VerificarCredenciales(nombre, contraseña))
             {
              
                 Form siguienteForm = new Form3();
@@ -40,7 +40,7 @@ namespace ProyectoLogin
             }
         }
 
-        private bool VerificarCredenciales(string username, string password)
+        private bool VerificarCredenciales(string nombre, string contraseña)
         {
            
             string connectionString = " ? "; // HACE FALTA AGREGAR LA BASE DE DATOS AQUIIIIII
@@ -52,8 +52,8 @@ namespace ProyectoLogin
                     string query = "SELECT * FROM Usuarios WHERE Usuario = @usuario AND Contraseña = @contraseña";
 
                     SqlCommand command = new SqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@usuario", username);
-                    command.Parameters.AddWithValue("@contraseña", password);
+                    command.Parameters.AddWithValue("@usuario", nombre);
+                    command.Parameters.AddWithValue("@contraseña", contraseña);
 
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.HasRows)
