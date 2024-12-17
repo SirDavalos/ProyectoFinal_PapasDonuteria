@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ferna\\Cpp\\prograC#\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj": {}
+    "C:\\Users\\ferna\\source\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ferna\\Cpp\\prograC#\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj": {
+    "C:\\Users\\ferna\\source\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ferna\\Cpp\\prograC#\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj",
+        "projectUniqueName": "C:\\Users\\ferna\\source\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj",
         "projectName": "ProyectoFinal_PapasDonuteria",
-        "projectPath": "C:\\Users\\ferna\\Cpp\\prograC#\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj",
+        "projectPath": "C:\\Users\\ferna\\source\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj",
         "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ferna\\Cpp\\prograC#\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\obj\\",
+        "outputPath": "C:\\Users\\ferna\\source\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,6 +44,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
