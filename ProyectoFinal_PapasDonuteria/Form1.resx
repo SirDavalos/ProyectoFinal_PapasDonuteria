@@ -12,8 +12,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="buttonMenu.Text" xml:space="preserve">
-    <value>Ir a Menu</value>
+  <data name="buttonMenu.Text" type="System.String, System.String">
+    <value>Ir a Menú</value>
+  </data>
+  <data name="universidadLabel.Text" type="System.String, System.String">
+    <value>Universidad Autónoma de Aguascalientes</value>
+  </data>
+  <data name="nombresLabel.Text" type="System.String, System.String">
+    <value>- Héctor Guerrero Villa\n- Angel Oziel Carrillo Díaz de León\n- Fernando Dávalos Gutiérrez\n- A. E. Domínguez Estrada\n- Diego Emilio Venegas Flores</value>
   </data>
 </root>
-
