@@ -25,7 +25,7 @@ namespace PortadaApp
 
 
             PictureBox logoPictureBox = new PictureBox();
-            logoPictureBox.Image = Image.FromFile("ruta_del_logo.png"); //debo cambiar la ruta de la imagen, me cago en mi ptm
+            logoPictureBox.Image = Image.FromFile("ruta_del_logo.png"); 
             logoPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             logoPictureBox.Size = new Size(200, 200);
             logoPictureBox.Location = new Point((this.ClientSize.Width - logoPictureBox.Width) / 2, 70);
@@ -34,7 +34,7 @@ namespace PortadaApp
 
 
             Label nombresLabel = new Label();
-            nombresLabel.Text = "- Héctor Guerrero Villa\n- Oziel\n- Fernando Dávalos Gutiérrez\n- Ely\n- Diego"; //falta añadir bien los nombres
+            nombresLabel.Text = "- Héctor Guerrero Villa\n- Angel Oziel Carrillo Díaz de León\n- Fernando Dávalos Gutiérrez\n- A. E. Domínguez Estrada\n- Diego Emilio Venegas Flores"; 
             nombresLabel.Font = new Font("Arial", 14);
             nombresLabel.TextAlign = ContentAlignment.TopLeft;
             nombresLabel.Location = new Point(50, 300);
