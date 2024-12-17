@@ -38,6 +38,13 @@ namespace ProyectoFinal_PapasDonuteria
             indiceM = 0;
             this.conexion = new AdminBD();
             elementos = conexion.consulta();
+            timerFechaHora.Tick += timerFechaHora_Tick;
+            timerFechaHora.Start();
+
+        }
+        private void timerFechaHora_Tick(object sender, EventArgs e)
+        {
+            labelFechaHora.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         }
 
         private void lblSalir_Click(object sender, EventArgs e)

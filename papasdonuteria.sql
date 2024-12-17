@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
+<<<<<<< HEAD
 -- Tiempo de generación: 16-12-2024 a las 05:15:08
+=======
+-- Tiempo de generación: 29-11-2024 a las 20:29:43
+>>>>>>> origin/dev
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -28,15 +32,21 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `productos` (
+<<<<<<< HEAD
   `id` int(11) NOT NULL,
   `tipo` int(11) NOT NULL COMMENT 'Aquí indica si es tipo de dona (0), tipo de masa (1), o glaseado (2)',
   `nombre` varchar(50) NOT NULL,
   `imagen` varchar(50) NOT NULL,
   `descripcion` varchar(250) NOT NULL,
+=======
+  `nombre` varchar(50) NOT NULL,
+  `imagen` varchar(50) NOT NULL,
+>>>>>>> origin/dev
   `precio` double NOT NULL,
   `existencia` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='Aquí se almacena los datos de todos los productos disponible';
 
+<<<<<<< HEAD
 --
 -- Volcado de datos para la tabla `productos`
 --
@@ -53,6 +63,8 @@ INSERT INTO `productos` (`id`, `tipo`, `nombre`, `imagen`, `descripcion`, `preci
 (8, 2, 'Fresa', 'Strawberry_Icing.png', 'Icing o cubierta de glaseado de fresa.', 2, 100),
 (9, 2, 'Vainilla', 'Vanilla_Icing.png', 'Icing o cubierta de glaseado de fresa.', 1.5, 100);
 
+=======
+>>>>>>> origin/dev
 -- --------------------------------------------------------
 
 --
@@ -60,9 +72,13 @@ INSERT INTO `productos` (`id`, `tipo`, `nombre`, `imagen`, `descripcion`, `preci
 --
 
 CREATE TABLE `usuarios` (
+<<<<<<< HEAD
   `id` int(11) NOT NULL,
   `nombre` varchar(50) DEFAULT NULL,
   `cuenta` varchar(50) NOT NULL,
+=======
+  `nombre` varchar(50) DEFAULT NULL,
+>>>>>>> origin/dev
   `contraseña` varchar(50) NOT NULL,
   `monto` double NOT NULL,
   `admin` tinyint(1) NOT NULL COMMENT 'Indica si el usuario tiene privilegios de administrados o no'
@@ -72,6 +88,7 @@ CREATE TABLE `usuarios` (
 -- Volcado de datos para la tabla `usuarios`
 --
 
+<<<<<<< HEAD
 INSERT INTO `usuarios` (`id`, `nombre`, `cuenta`, `contraseña`, `monto`, `admin`) VALUES
 (0, 'Administrador', 'admin', 'SoyElAdmin1234', 0, 1),
 (1, 'Elijah Dominguez', 'elijah', 'ContraseñaUsuario1', 0, 0),
@@ -80,6 +97,10 @@ INSERT INTO `usuarios` (`id`, `nombre`, `cuenta`, `contraseña`, `monto`, `admin
 (4, 'Hector Guerrero', 'hector', 'ContraseñaUsuario4', 0, 0),
 (5, 'Diego Venegas', 'diego', 'ContraseñaUsuario5', 0, 0),
 (6, 'Invitado', 'invitado', '', 0, 0);
+=======
+INSERT INTO `usuarios` (`nombre`, `contraseña`, `monto`, `admin`) VALUES
+('Administrador', 'SoyElAdmin1234', 0, 1);
+>>>>>>> origin/dev
 
 --
 -- Índices para tablas volcadas
@@ -89,13 +110,21 @@ INSERT INTO `usuarios` (`id`, `nombre`, `cuenta`, `contraseña`, `monto`, `admin
 -- Indices de la tabla `productos`
 --
 ALTER TABLE `productos`
+<<<<<<< HEAD
   ADD PRIMARY KEY (`id`);
+=======
+  ADD PRIMARY KEY (`nombre`);
+>>>>>>> origin/dev
 
 --
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
+<<<<<<< HEAD
   ADD PRIMARY KEY (`id`);
+=======
+  ADD UNIQUE KEY `nombre` (`nombre`);
+>>>>>>> origin/dev
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

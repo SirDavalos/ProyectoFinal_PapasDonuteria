@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             buttonMenu = new Button();
             SuspendLayout();
             // 
@@ -41,14 +42,23 @@
             buttonMenu.UseVisualStyleBackColor = true;
             buttonMenu.Click += buttonMenu_Click;
             // 
+=======
+            SuspendLayout();
+            // 
+>>>>>>> origin/dev
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+<<<<<<< HEAD
             ClientSize = new Size(1009, 508);
             Controls.Add(buttonMenu);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
+=======
+            ClientSize = new Size(800, 450);
+            Name = "Form1";
+>>>>>>> origin/dev
             Text = "Form1";
             ResumeLayout(false);
         }

@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinal_PapasDonuteria
 {
-    partial class FormListaProd
+    partial class FormVentasTotales
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             labelFechaHora = new Label();
-            lblLista = new Label();
+            label2 = new Label();
             panel1 = new Panel();
             label12 = new Label();
             label4 = new Label();
@@ -39,33 +39,31 @@
             pictureBox1 = new PictureBox();
             buttonLogOut = new Button();
             labelUsuario = new Label();
-            dataGridViewLista = new DataGridView();
             timerFechaHora = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewLista).BeginInit();
             SuspendLayout();
             // 
             // labelFechaHora
             // 
             labelFechaHora.AutoSize = true;
             labelFechaHora.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelFechaHora.Location = new Point(15, 96);
+            labelFechaHora.Location = new Point(24, 105);
             labelFechaHora.Name = "labelFechaHora";
             labelFechaHora.Size = new Size(117, 19);
             labelFechaHora.TabIndex = 68;
             labelFechaHora.Text = "FECHA Y HORA";
             // 
-            // lblLista
+            // label2
             // 
-            lblLista.AutoSize = true;
-            lblLista.Font = new Font("Gill Sans Ultra Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblLista.ForeColor = Color.FromArgb(255, 128, 128);
-            lblLista.Location = new Point(364, 96);
-            lblLista.Name = "lblLista";
-            lblLista.Size = new Size(292, 30);
-            lblLista.TabIndex = 67;
-            lblLista.Text = "LISTA DE PRODUCTOS";
+            label2.AutoSize = true;
+            label2.Font = new Font("Gill Sans Ultra Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.FromArgb(255, 128, 128);
+            label2.Location = new Point(354, 105);
+            label2.Name = "label2";
+            label2.Size = new Size(237, 30);
+            label2.TabIndex = 67;
+            label2.Text = "VENTAS TOTALES";
             // 
             // panel1
             // 
@@ -77,7 +75,7 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(buttonLogOut);
             panel1.Controls.Add(labelUsuario);
-            panel1.Location = new Point(3, 3);
+            panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
             panel1.Size = new Size(1008, 84);
             panel1.TabIndex = 66;
@@ -159,37 +157,26 @@
             labelUsuario.TabIndex = 17;
             labelUsuario.Text = "usuario";
             // 
-            // dataGridViewLista
-            // 
-            dataGridViewLista.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewLista.Location = new Point(125, 184);
-            dataGridViewLista.Name = "dataGridViewLista";
-            dataGridViewLista.Size = new Size(696, 226);
-            dataGridViewLista.TabIndex = 70;
-            // 
-            // FormListaProd
+            // FormVentasTotales
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1033, 450);
-            Controls.Add(dataGridViewLista);
             Controls.Add(labelFechaHora);
-            Controls.Add(lblLista);
+            Controls.Add(label2);
             Controls.Add(panel1);
-            Name = "FormListaProd";
-            Text = "FormListaProd";
-            Load += FormListaProd_Load;
+            Name = "FormVentasTotales";
+            Text = "FormVentasTotales";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewLista).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
         private Label labelFechaHora;
-        private Label lblLista;
+        private Label label2;
         private Panel panel1;
         private Label label12;
         private Label label4;
@@ -198,7 +185,6 @@
         private PictureBox pictureBox1;
         private Button buttonLogOut;
         private Label labelUsuario;
-        private DataGridView dataGridViewLista;
         private System.Windows.Forms.Timer timerFechaHora;
     }
 }
