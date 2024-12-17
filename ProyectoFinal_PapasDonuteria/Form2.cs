@@ -1,34 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 using System.Windows.Forms;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.Data.SqlClient; 
+using MySql.Data.MySqlClient;
 
 namespace ProyectoLogin
 {
-    public partial class LoginForm : Form
+    public partial class Form2 : Form
     {
-        public LoginForm()
+        public Form2()
         {
             InitializeComponent();
         }
 
         private void buttonContinuar_Click(object sender, EventArgs e)
         {
-          
             string cuenta = textBoxUsuario.Text;
             string contraseña = textBoxContraseña.Text;
 
-          
             if (VerificarCredenciales(cuenta, contraseña))
             {
-             
                 Form siguienteForm = new Form3();
                 this.Hide();
                 siguienteForm.ShowDialog();
@@ -42,25 +31,27 @@ namespace ProyectoLogin
 
         private bool VerificarCredenciales(string cuenta, string contraseña)
         {
-           
-            string connectionString = " ? "; // HACE FALTA AGREGAR LA BASE DE DATOS AQUIIIIII
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            string connectionString = "Server=localhost;Database=papasdonuteria;Uid=root;Pwd=tu_contraseña;";
+
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
-                    string query = "SELECT * FROM Usuarios WHERE Usuario = @usuario AND Contraseña = @contraseña";
+                    string query = "SELECT * FROM usuarios WHERE cuenta = @usuario AND contraseña = @contraseña";
 
-                    SqlCommand command = new SqlCommand(query, connection);
+                    MySqlCommand command = new MySqlCommand(query, connection);
                     command.Parameters.AddWithValue("@usuario", cuenta);
                     command.Parameters.AddWithValue("@contraseña", contraseña);
 
-                    SqlDataReader reader = command.ExecuteReader();
+                    MySqlDataReader reader = command.ExecuteReader();
+
                     if (reader.HasRows)
                     {
                         reader.Read();
-                        string rol = reader["Rol"].ToString(); 
-                        if (rol == "admin")
+                        int rol = Convert.ToInt32(reader["admin"]);
+
+                        if (rol == 1)
                         {
                             MessageBox.Show("Bienvenido Administrador", "Acceso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
@@ -68,6 +59,7 @@ namespace ProyectoLogin
                         {
                             MessageBox.Show("Bienvenido Usuario", "Acceso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
+
                         return true;
                     }
                     else
