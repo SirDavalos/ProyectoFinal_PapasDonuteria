@@ -35,11 +35,11 @@
             label5 = new Label();
             labelfecha = new Label();
             groupBox1 = new GroupBox();
-            groupBox2 = new GroupBox();
-            buttonEfec = new Button();
-            buttonTarj = new Button();
-            textBox1 = new TextBox();
             textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            groupBox2 = new GroupBox();
+            buttonTarj = new Button();
+            buttonEfec = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -113,7 +113,20 @@
             groupBox1.Size = new Size(288, 198);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(146, 84);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(125, 27);
+            textBox2.TabIndex = 9;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(146, 33);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(125, 27);
+            textBox1.TabIndex = 8;
             // 
             // groupBox2
             // 
@@ -124,17 +137,6 @@
             groupBox2.Size = new Size(250, 196);
             groupBox2.TabIndex = 7;
             groupBox2.TabStop = false;
-            groupBox2.Text = "groupBox2";
-            // 
-            // buttonEfec
-            // 
-            buttonEfec.Location = new Point(52, 23);
-            buttonEfec.Name = "buttonEfec";
-            buttonEfec.Size = new Size(120, 70);
-            buttonEfec.TabIndex = 0;
-            buttonEfec.Text = "Efectivo";
-            buttonEfec.UseVisualStyleBackColor = true;
-            buttonEfec.Click += buttonEfec_Click;
             // 
             // buttonTarj
             // 
@@ -146,19 +148,15 @@
             buttonTarj.UseVisualStyleBackColor = true;
             buttonTarj.Click += buttonTarj_Click;
             // 
-            // textBox1
+            // buttonEfec
             // 
-            textBox1.Location = new Point(146, 33);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 8;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(146, 84);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 9;
+            buttonEfec.Location = new Point(52, 23);
+            buttonEfec.Name = "buttonEfec";
+            buttonEfec.Size = new Size(120, 70);
+            buttonEfec.TabIndex = 0;
+            buttonEfec.Text = "Efectivo";
+            buttonEfec.UseVisualStyleBackColor = true;
+            buttonEfec.Click += buttonEfec_Click;
             // 
             // Form5
             // 

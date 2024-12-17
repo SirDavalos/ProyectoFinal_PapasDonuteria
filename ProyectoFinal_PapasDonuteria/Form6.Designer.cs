@@ -28,45 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            buttonPago = new Button();
+            pictureBox1 = new PictureBox();
+            button1 = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // pictureBox1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(27, 37);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
+            pictureBox1.Location = new Point(12, 126);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(484, 299);
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
             // 
-            // buttonPago
+            // button1
             // 
-            buttonPago.Location = new Point(78, 101);
-            buttonPago.Name = "buttonPago";
-            buttonPago.Size = new Size(94, 29);
-            buttonPago.TabIndex = 1;
-            buttonPago.Text = "Pagar";
-            buttonPago.UseVisualStyleBackColor = true;
-            buttonPago.Click += buttonPago_Click;
+            button1.Location = new Point(42, 41);
+            button1.Name = "button1";
+            button1.Size = new Size(149, 56);
+            button1.TabIndex = 3;
+            button1.Text = "Generar codigo de barras";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form6
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(buttonPago);
-            Controls.Add(label1);
+            Controls.Add(button1);
+            Controls.Add(pictureBox1);
             Name = "Form6";
             Text = "Form6";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private Button buttonPago;
+        private PictureBox pictureBox1;
+        private Button button1;
     }
 }

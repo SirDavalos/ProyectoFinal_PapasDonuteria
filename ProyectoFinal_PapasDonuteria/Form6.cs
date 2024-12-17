@@ -17,12 +17,9 @@ namespace ProyectoFinal_PapasDonuteria
             InitializeComponent();
         }
 
-        private void buttonPago_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            Form8 form8 = new Form8();
-            this.Hide();
-            form8.ShowDialog();
-            this.Show();
+            
         }
     }
 }

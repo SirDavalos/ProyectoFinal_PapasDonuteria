@@ -1609,19 +1609,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ferna\\.nuget\\packages\\": {}
+    "C:\\Users\\rafranco\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ferna\\source\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj",
+      "projectUniqueName": "C:\\Users\\rafranco\\Desktop\\nuevo\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj",
       "projectName": "ProyectoFinal_PapasDonuteria",
-      "projectPath": "C:\\Users\\ferna\\source\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj",
-      "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ferna\\source\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\obj\\",
+      "projectPath": "C:\\Users\\rafranco\\Desktop\\nuevo\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria.csproj",
+      "packagesPath": "C:\\Users\\rafranco\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rafranco\\Desktop\\nuevo\\ProyectoFinal_PapasDonuteria\\ProyectoFinal_PapasDonuteria\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rafranco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1645,8 +1650,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      }
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -1676,8 +1682,20 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"System.Text.Json\" 8.0.4 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-8g4q-xg66-9fp4",
+      "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
 }
