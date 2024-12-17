@@ -29,7 +29,7 @@ namespace ProyectoLogin
             if (VerificarCredenciales(username, password))
             {
              
-                Form siguienteForm = new Form2();
+                Form siguienteForm = new Form3();
                 this.Hide();
                 siguienteForm.ShowDialog();
                 this.Show();
