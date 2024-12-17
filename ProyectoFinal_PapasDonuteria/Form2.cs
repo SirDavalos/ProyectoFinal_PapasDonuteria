@@ -8,33 +8,78 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Data.SqlClient; 
 
-namespace ProyectoFinal_PapasDonuteria
+namespace ProyectoLogin
 {
-    public partial class Form2 : Form
+    public partial class LoginForm : Form
     {
-        public Form2()
+        public LoginForm()
         {
             InitializeComponent();
         }
 
-        private void buttonInicio_Click(object sender, EventArgs e)
+        private void buttonContinuar_Click(object sender, EventArgs e)
         {
-            //NECESITO QUE COMPRUEBEN EL USUARIO Y LO MANDEN AQUI
-            string usuario = textBoxUsuario.Text;
-            if(usuario != "admin")
+          
+            string username = textBoxUsuario.Text;
+            string password = textBoxContraseña.Text;
+
+          
+            if (VerificarCredenciales(username, password))
             {
-                Form3 form3 = new Form3(usuario);
+             
+                Form siguienteForm = new Form2();
                 this.Hide();
-                form3.ShowDialog();
+                siguienteForm.ShowDialog();
                 this.Show();
             }
             else
             {
-                FormAdmin formAdmin = new FormAdmin(usuario);
-                this.Hide();
-                formAdmin.ShowDialog();
-                this.Show();
+                MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private bool VerificarCredenciales(string username, string password)
+        {
+           
+            string connectionString = " ? "; // HACE FALTA AGREGAR LA BASE DE DATOS AQUIIIIII
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    string query = "SELECT * FROM Usuarios WHERE Usuario = @usuario AND Contraseña = @contraseña";
+
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@usuario", username);
+                    command.Parameters.AddWithValue("@contraseña", password);
+
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.HasRows)
+                    {
+                        reader.Read();
+                        string rol = reader["Rol"].ToString(); 
+                        if (rol == "admin")
+                        {
+                            MessageBox.Show("Bienvenido Administrador", "Acceso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Bienvenido Usuario", "Acceso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al conectar con la base de datos: " + ex.Message);
+                    return false;
+                }
             }
         }
     }
